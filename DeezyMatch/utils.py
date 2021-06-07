@@ -83,7 +83,8 @@ def eval_map(list_of_list_of_labels,list_of_list_of_scores,randomize=True):
 
 
 # ------------------- string_split --------------------
-def string_split(x, tokenize=["char"], min_gram=1, max_gram=3):
+def string_split(x, tokenize=["char"], min_gram=1, max_gram=3, word_splitters = [" ","_"]):
+        
     """
     Split a string using various methods.
     min_gram and max_gram are used only if "ngram" is in tokenize
